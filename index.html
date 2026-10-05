@@ -60,6 +60,9 @@ td code { font-size:.78rem; }
 figure { margin:24px 0 28px; }
 figure svg { width:100%; height:auto; display:block; }
 figcaption { color:var(--muted); font-size:.8rem; margin-top:8px; }
+.profile a { color:var(--muted); text-underline-offset:3px; }
+.profile a:hover { color:var(--ink); }
+section.author { margin-top:72px; padding-top:20px; border-top:1px solid var(--ink); }
 aside.note { border-left:1px solid var(--ink); padding:2px 0 2px 20px; margin:20px 0; }
 aside.note .label { display:block; }
 .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:8px 28px; }
@@ -130,6 +133,7 @@ svg .arrowhead { fill:var(--ink); } svg .arrowhead-m { fill:var(--muted); } svg 
     <li><a href="#build">18 · Build &amp; run</a></li>
     <li><a href="#roadmap">19 · Roadmap</a></li>
     <li><a href="#glossary">20 · Glossary</a></li>
+    <li><a href="#author">Author &amp; contact</a></li>
   </ol>
 </nav>
 
@@ -139,6 +143,7 @@ svg .arrowhead { fill:var(--ink); } svg .arrowhead-m { fill:var(--muted); } svg 
   <h1>SmartNotes-AI</h1>
   <p class="lead">A macOS app that records university lectures, transcribes them on-device, and turns each one into structured notes that merge into a single living notebook per course.</p>
   <p class="meta">Version 0.1.0 (v1) · October 2026 · Swift 6 · macOS 15+ · Apple Silicon · by Viswas Vinayakumar</p>
+  <p class="meta profile"><a href="https://viswas-vinayakumar.github.io/portfolio-2026/" rel="noopener" target="_blank">Portfolio</a> · <a href="https://github.com/viswas-vinayakumar" rel="noopener" target="_blank">GitHub</a> · <a href="https://www.linkedin.com/in/viswas-vinayakumar-5659aa228" rel="noopener" target="_blank">LinkedIn</a> · <a href="https://x.com/vichu_learns" rel="noopener" target="_blank">X (@vichu_learns)</a> · <a href="mailto:viswasvinayakumar@gmail.com">viswasvinayakumar@gmail.com</a></p>
 </header>
 
 <!-- ============================================================ 1 -->
@@ -973,7 +978,13 @@ open SmartNotes.app</code></pre>
 <tr><td>WhisperKit</td><td>Swift package running OpenAI's Whisper speech model on Apple hardware via Core ML.</td></tr>
 <tr><td>Claude Code</td><td>Anthropic's command-line agent; SmartNotes uses its non-interactive <code>-p</code> mode.</td></tr>
 </table></div>
-<p class="meta" style="margin-top:48px">SmartNotes-AI documentation · v1 · generated from the source on 5 October 2026.</p>
+</section>
+
+<section id="author" class="author">
+<div class="label">Author</div>
+<p><b>Viswas Vinayakumar</b> — AI/ML engineer, M.Sc. student in Berlin. I designed SmartNotes-AI for my own lectures and built it with Claude Code as a pair programmer: a written spec, a plan, test-first code and a review for every feature.</p>
+<p class="meta"><a href="https://viswas-vinayakumar.github.io/portfolio-2026/" rel="noopener" target="_blank">Portfolio</a> · <a href="https://github.com/viswas-vinayakumar" rel="noopener" target="_blank">GitHub</a> · <a href="https://www.linkedin.com/in/viswas-vinayakumar-5659aa228" rel="noopener" target="_blank">LinkedIn</a> · <a href="https://x.com/vichu_learns" rel="noopener" target="_blank">X (@vichu_learns)</a> · <a href="mailto:viswasvinayakumar@gmail.com">viswasvinayakumar@gmail.com</a></p>
+<p class="meta" style="margin-top:32px">SmartNotes-AI documentation · v1 · generated from the source on 5 October 2026.</p>
 </section>
 </main>
 </div>
